@@ -27,36 +27,35 @@ validation_generator = val_datagen.flow_from_directory(
   class_mode='categorical'
 )
 
-# Convolutional Neural Network(CNN)
 model = tf.keras.models.Sequential([
-  tf.keras.layers.Conv2D(32, (3,3), activation='relu', input_shape=(48, 48, 1)),
-  tf.keras.layers.Conv2D(64, (3,3), activation='relu'),
-  tf.keras.layers.MaxPooling2D(2,2),
-  tf.keras.layers.Dropout(0.25),
+    tf.keras.layers.Conv2D(32, (3,3), activation='relu', input_shape=(48, 48, 1)),
+    tf.keras.layers.Conv2D(64, (3,3), activation='relu'),
+    tf.keras.layers.MaxPooling2D(2,2),
+    tf.keras.layers.Dropout(0.25),
 
-  tf.keras.layers.Conv2D(128, (3,3), activation='relu'),
-  tf.keras.layers.MaxPooling2D(2,2),
-  tf.keras.layers.Conv2D(128, (3,3), activation='relu'),
-  tf.keras.layers.MaxPooling2D(2,2),
-  tf.keras.layers.Dropout(0.25),
+    tf.keras.layers.Conv2D(128, (3,3), activation='relu'),
+    tf.keras.layers.MaxPooling2D(2,2),
+    tf.keras.layers.Conv2D(128, (3,3), activation='relu'),
+    tf.keras.layers.MaxPooling2D(2,2),
+    tf.keras.layers.Dropout(0.25),
 
-  tf.keras.layers.Flatten(),
-  tf.keras.layers.Dense(1024, activation='relu'),
-  tf.keras.layers.Dropout(0.5),
-  tf.keras.layers.Dense(7, activation='softmax')
+    tf.keras.layers.Flatten(),
+    tf.keras.layers.Dense(1024, activation='relu'),
+    tf.keras.layers.Dropout(0.5),
+    tf.keras.layers.Dense(7, activation='softmax')
 ])
 
 model.compile(
-  loss='categorical_crossentropy',
-  optimizer='adam',
-  metrics=['accuracy']
+    loss = 'categorical_crossentropy',
+    optimizer='adam',
+    metrics=['accuracy']
 )
 
 history = model.fit(
-  train_generator,
-  epochs=25,
-  validation_data=validation_generator,
-  verbose=1
+    train_generator,
+    epochs=50,
+    validation_data = validation_generator,
+    verbose = 1
 )
 
-model.save('model.h5')
+model.save("model.h5")
