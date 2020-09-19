@@ -1,7 +1,7 @@
 # Emojify
 Machine Learning project for the course 'Artificial Intelligence', provided by the Amsterdam University of Applied Sciences. This product exists of a Deep Learning model and a GUI. The project contains the FER-2013 dataset and a trained model, made with train.py.
 
-This app uses your webcam and facial recognition to check your facial expression. Based on your facial expression, the model will make a prediction of your emotional state and will print a matching Emoji with it. The app consists of a Covolutional Neural Network and a simple GUI.
+The goal of this course is to create an Artificial Intelligence based application. Our concept is an app that uses your webcam and facial recognition to check your facial expression. Based on your facial expression, the model will make a prediction of your emotional state and will print a matching Emoji with it. The app consists of a Covolutional Neural Network, a trained model and a simple GUI.
 
 #### Used modules
 > To install these modules, check their documentation.
