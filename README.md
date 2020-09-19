@@ -30,7 +30,7 @@ To train our model, we'll need data. For our project we used FER-2013 as our dat
 train_dir = 'data/train'
 val_dir = 'data/test'
 ```
-We'll have two directories: one for test data and another for validation. The validation directory will be the 'test' folder. Don't get confused by the names. If the name doesn't suite you, feel free to change the directory names to something else. Just make sure it will be recognizable for someone else.
+We'll have two directories: one for test data and another for validation. The validation directory will be the 'test' folder. Don't get confused by the names. If the name doesn't suit you, feel free to change the directory names to something else. Just make sure it will be recognizable for someone else.
 
 Next step, is to extract data from the images. This is where the `ImageDataGenerator` member of Keras will be our saviour! It will generate batches of tensor image data with real-time data augmentation. We'll call it's method and give it a rescale parameter of 1./255 to target an output of 0 and 1 instead of 0-255 from our images' RGB coefficients. It's possible to add different parameters. Check the [documentation](https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/image/ImageDataGenerator) for more info. But for now will stick with just one.
 ```python
