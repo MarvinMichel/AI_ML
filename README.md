@@ -26,7 +26,7 @@ $ gh repo clone MarvinMichel/Emojify
 ```
 $ cd /location_of_download/Emojify
 ```
-3. Open your terminal and run the task suited to your needs:
+3. Run the task suited to your needs:
     - To train the model:
     ```
     $ python3 train.py
