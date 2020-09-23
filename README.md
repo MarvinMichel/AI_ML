@@ -1,19 +1,18 @@
 # Emojify
 Machine Learning project for the course 'Artificial Intelligence', provided by the Amsterdam University of Applied Sciences. This product exists of a Deep Learning model and a GUI. The project contains the FER-2013 dataset and a trained model, made with train.py.
 
-The goal of this course is to create an Artificial Intelligence based application. Our concept is an app that uses your webcam and facial recognition to check your facial expression. Based on your facial expression, the model will make a prediction of your emotional state and will print a matching Emoji with it. The app consists of a Covolutional Neural Network, a trained model and a simple GUI.
+The goal of this course is to create an Artificial Intelligence based application. Our concept is a real-time Emotion Detection application using your webcam. The app consists of a Covolutional Neural Network, a trained model and a simple GUI.
 
-#### Used modules
+## Dependencies
 > To install these modules, check their documentation.
 - [OpenCV](https://docs.opencv.org/master/)
 - [Tensorflow](https://www.tensorflow.org/)
 - [Numpy](https://numpy.org/)
 - [Keras](https://keras.io/)
-
-#### Used dataset
+- [Pillow](https://pypi.org/project/Pillow/)
 - [FER-2013](https://www.kaggle.com/msambare/fer2013)
 
-# How does it work?
+## How does it work?
 The training model is a Convolutional Neural Network. It is an algorithm that uses several layers of filters and neurons working together to recognize abstract features. This makes it possible for our system to not just recognize a face, but look at your facial expression to see what emotion you are expressing. We start by importing every module that we'll need in the process.
 ```python
 import numpy as np
