@@ -5,6 +5,7 @@ The goal of this course is to create an Artificial Intelligence based applicatio
 
 ## Dependencies
 > To install these modules, check their documentation.
+- [Python 3.8](https://www.python.org/downloads/)
 - [OpenCV](https://docs.opencv.org/master/)
 - [Tensorflow](https://www.tensorflow.org/)
 - [Numpy](https://numpy.org/)
@@ -12,6 +13,20 @@ The goal of this course is to create an Artificial Intelligence based applicatio
 - [Pillow](https://pypi.org/project/Pillow/)
 - [FER-2013](https://www.kaggle.com/msambare/fer2013)
 
+## How to use?
+1. Download the .zip file and extract the content or clone the repository by running:
+```
+$ gh repo clone MarvinMichel/Emojify
+```
+2. Open your terminal and run the task suited to your needs:
+    - To train the model:
+    ```
+    $ python3 train.py
+    ```
+    - To use the application:
+    ```
+    $ python3 gui.py
+    ```
 ## How does it work?
 The training model is a Convolutional Neural Network. It is an algorithm that uses several layers of filters and neurons working together to recognize abstract features. This makes it possible for our system to not just recognize a face, but look at your facial expression to see what emotion you are expressing. We start by importing every module that we'll need in the process.
 ```python
