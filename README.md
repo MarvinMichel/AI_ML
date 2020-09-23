@@ -35,6 +35,8 @@ $ cd /location_of_download/Emojify
     ```
     $ python3 gui.py
     ```
+4. Press `Q` to quit the application and close the window.
+
 ## How does it work?
 The training model is a Convolutional Neural Network. It is an algorithm that uses several layers of filters and neurons working together to recognize abstract features. This makes it possible for our system to not just recognize a face, but look at your facial expression to see what emotion you are expressing. We start by importing every module that we'll need in the process.
 ```python
