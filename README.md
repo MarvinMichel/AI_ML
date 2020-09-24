@@ -2,6 +2,9 @@
 Machine Learning project for the course 'Artificial Intelligence', provided by the Amsterdam University of Applied Sciences. This product exists of a Deep Learning model and a GUI. The project contains the FER-2013 dataset and a trained model, made with train.py.
 
 The goal of this course is to create an Artificial Intelligence based application. Our concept is a real-time Emotion Detection application using your webcam. The app consists of a Covolutional Neural Network, a trained model and a simple GUI.
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/25977763/94037863-14a60d00-fdc6-11ea-8e1c-d38aa8832b41.png" width="70%">
+</p>
 
 ## Dependencies
 > To install these modules, check their documentation.
@@ -18,7 +21,12 @@ The goal of this course is to create an Artificial Intelligence based applicatio
 ```
 $ gh repo clone MarvinMichel/Emojify
 ```
-2. Open your terminal and run the task suited to your needs:
+2. Open your terminal and move to the Emojify directory:
+    <img width="500" align="right" alt="terminal example" src="https://user-images.githubusercontent.com/25977763/94035806-d576bc80-fdc3-11ea-9fd5-25a01bb4289f.png">
+```
+$ cd /location_of_download/Emojify
+```
+3. Run the task suited to your needs:
     - To train the model:
     ```
     $ python3 train.py
@@ -27,6 +35,8 @@ $ gh repo clone MarvinMichel/Emojify
     ```
     $ python3 gui.py
     ```
+4. Press `Q` to quit the application and close the window.
+
 ## How does it work?
 The training model is a Convolutional Neural Network. It is an algorithm that uses several layers of filters and neurons working together to recognize abstract features. This makes it possible for our system to not just recognize a face, but look at your facial expression to see what emotion you are expressing. We start by importing every module that we'll need in the process.
 ```python
