@@ -52,33 +52,16 @@ model=tf.keras.models.Sequential([
     tf.keras.layers.Dense(7, activation='softmax')
 ])
 
-#Start webcam feed
-cv2.ocl.setUseOpenCL(False)
-
-#All posible classes
-emotion_dictionary={
-  0: 'Angry',
-  1: 'Disgusted',
-  2: 'Fear',
-  3: 'Happy',
-  4: 'Neutral',
-  5: 'Sad',
-  6: 'Suprised'
-}
-
-#Compile model
+#Compile, fit and save model
 model.compile(
     loss = 'categorical_crossentropy',
     optimizer='adam',
     metrics=['accuracy']
 )
-
 history = model.fit(
     train_generator,
-    epochs=1,
+    epochs=50,
     validation_data = validation_generator,
     verbose = 1
 )
-
 model.save_weights("model.h5")
-
